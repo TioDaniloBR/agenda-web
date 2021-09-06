@@ -1,0 +1,47 @@
+<header>
+    <div class="container">
+        <div class="col">
+            <h1>Novo Contato</h1>
+        </div>
+    </div>
+</header>
+<section class="body align-items-left">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        Aqui você poderá adicionar novos contatos em sua agenda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="align-items-left">
+        <div class="container formulario">
+            <div class="row">
+                <div class="col">
+                    <form action="">
+                        <label for="name" class="form-label" >Nome</label>
+                        <input type="text" class="form-control" name="name" [(ngModel)] = "name">
+                        
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" name="email" [(ngModel)] = "email">
+    
+                        <label for="phone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" name="phone" [(ngModel)] = "phone">
+    
+                        <input type="button"  class="btn btn-primary" value="{{ buttonValue }}" (click)="acaoBotao()">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<footer class="" >
+    <div class="container">
+        <div class="col">
+            <a href="/">voltar</a>
+        </div>
+    </div>
+</footer>

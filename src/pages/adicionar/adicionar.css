@@ -1,0 +1,13 @@
+header{
+    padding-top: 10px;
+}
+.body{
+    padding-top: 10px;
+}
+footer{
+    bottom: 0;
+    position: absolute;
+}
+.formulario{
+    width: 35%;
+}

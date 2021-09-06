@@ -1,0 +1,52 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Contatos</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="body">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            
+                            <th scope="col">Nome</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Telefone</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let contato of agenda">
+                            
+                            <td>{{ contato.name }}</td>
+                            <td>{{ contato.email }}</td>
+                            <td>{{ contato.phone }}</td>
+                            <td>
+                                <button (click) = "edit(contato._id)">EDIT</button> /
+                                <button (click) = "deletar(contato._id)">DELETE</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="/">Voltar</a>
+            </div>
+        </div>
+    </div>
+</footer>
