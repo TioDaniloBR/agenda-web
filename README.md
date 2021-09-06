@@ -1,3 +1,5 @@
+Aplicativo simplificado usando Angular para colocar em prática aprendizado em consumo de APIS.
+
 # Agenda
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
